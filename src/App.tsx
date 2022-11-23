@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { SMain } from "./App.style";
+import CalculatorForm from "./components/form/calculatorForm";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SMain>
+        <div className="container">
+          <CalculatorForm />
+        </div>
+      </SMain>
+      <footer>
+        <div className="container">
+          <small>
+            Developed by <a href="https://portfolio.hbler.com">hbler</a>
+          </small>
+        </div>
+      </footer>
     </div>
   );
 }
